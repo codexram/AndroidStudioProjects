@@ -1,0 +1,47 @@
+name: cinemanow
+description: "A Flutter movie booking application with authentication, movie listings, seat selection, and payment functionality."
+
+# Prevent accidental publishing
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  intl: ^0.18.1
+  page_transition: ^2.0.9
+  flutter_svg: ^2.0.7
+  cached_network_image: ^3.3.0
+  google_fonts: ^6.1.0
+  shimmer: ^3.0.0
+  confetti: ^0.7.0
+  flutter_animate: ^4.1.1+1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
