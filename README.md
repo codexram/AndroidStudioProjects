@@ -1,152 +1,99 @@
-# 📱 DevByRam — Flutter App Portfolio
+# 🎬 CinemaNow — Premium Movie Ticket Booking App
 
-Welcome to **DevByRam**, a curated collection of high-quality mobile applications built using the **Flutter** SDK. This repository showcases real-world mobile development practices, premium UI/UX designs, interactive animations, and responsive layouts.
-
----
-
-## 🚀 Projects Overview
-
-| Project | Description | Platform Support | Tech Highlights |
-| :--- | :--- | :--- | :--- |
-| **[CinemaNow](./CinemaNow)** | A feature-rich movie ticket booking application featuring authentication, interactive seat selection, and digital tickets. | Android, iOS, Web, Windows, macOS, Linux | `flutter_animate`, `shimmer`, `cached_network_image`, `confetti` |
-| **[ITW_Project](./ITW_Project)** | A security-focused authentication framework demonstration with deep field validation and smooth transitions. | Android, iOS, Web, Windows, macOS, Linux | `intl`, Custom Animation Controllers |
+CinemaNow is a feature-rich, high-fidelity Flutter application designed to offer users a modern and seamless movie ticket booking journey. From dynamic home screens to an interactive 3D-perspective seat planner and real-time backend integration, this project represents state-of-the-art Flutter development practices.
 
 ---
 
-## 🎬 1. CinemaNow — Movie Ticket Booking App
+## ✨ Features Showcase
 
-**CinemaNow** is a premium, state-of-the-art movie booking application designed to deliver a smooth and engaging booking experience.
+### 🔐 1. Secure Authentication & Profiles
+- **Firebase Auth**: Robust login/signup system powered by Firebase.
+- **Google Sign-In**: One-tap authentication for a frictionless onboarding experience.
+- **User Profiles**: Personalized accounts with profile picture uploads via `image_picker`.
+- **Custom Button Animation**: `AnimBtn` with progress filling and haptic feedback.
 
-### Key Screens & Flow
-1. **Security & Authentication (`AuthScreen`)**
-   - Elegant gradient background (`#6A11CB` to `#2575FC`) with a custom logo.
-   - Fluid slide and fade animations between **Sign In**, **Sign Up**, and **Password Reset** modes.
-   - Interactive, custom animated login buttons (`AnimBtn`) that show confirmation progress upon completion.
-   - Custom field validation, password visibility toggles, and an "I am human" checkbox verification.
-2. **Dynamic Movie Showcase (`HomeScreen`)**
-   - Immersive nested scroll experience (`NestedScrollView`) with custom silver app bar.
-   - Tab navigation for **Now Playing** (dynamic rating overlays, genre badges) and **Coming Soon** movies.
-   - Seamless shimmer loading transitions using the `shimmer` package.
-   - Bottom navigation menu to browse Home, Search, Tickets, and Profile.
-3. **Comprehensive Movie Detail Screen (`MovieDetailScreen`)**
-   - Parallax banner backdrop, bookmark, and social share buttons.
-   - Detailed cast carousel displaying actors' avatars and info.
-   - One-click trailer launcher and immediate booking redirection.
-4. **Interactive Seat Planner (`SeatSelectionScreen`)**
-   - Dynamic 3D-perspective theater layout using custom matrix transformations.
-   - Interactive seat grid categorized into **Regular**, **Premium**, and **Recliner** classes.
-   - Live ticket counter and price updates based on selected tiers.
-   - Visual status indicators (Available, Selected, Booked, Reserved).
-5. **Express Checkout & Payment (`CheckoutScreen`)**
-   - Detailed order summaries with dynamic calculation.
-   - Multi-channel support (Credit/Debit Card, PayPal, UPI, Google Pay, PhonePe, Paytm, and Net Banking).
-   - Form-field validation for CVV, expiry dates, and cardholder info.
-6. **Digital Ticket Confirmation (`ConfirmationScreen`)**
-   - Success animation overlay.
-   - Visual ticket card complete with custom dashed separators and realistic side-punched ticket edges.
-   - Scannable QR code generator mock for digital scanning.
-   - Quick sharing and local ticket downloading capabilities.
-7. **Personalized Profile Hub (`ProfileScreen`)**
-   - Centralized avatar, display name, and user email.
-   - Modular navigation to edit profiles, notification settings, booking history, reviews, and safe logout.
+### 🌗 2. Dynamic Theme Engine
+- **Dual Mode Support**: Fully optimized Light and Dark themes with smooth transitions.
+- **Custom Design Tokens**: A curated palette (Gold, Cyan, Rose) ensuring consistent UI across all components.
+- **Provider State Management**: Global theme and user state handling.
 
-### Tech Stack
-- **Languages**: Dart
-- **Framework**: Flutter
-- **Key Packages**:
-  - `cached_network_image` — Seamless network image caching.
-  - `flutter_animate` — Stunning micro-interactions.
-  - `google_fonts` — Premium typography (Poppins).
-  - `shimmer` — Skeleton loaders during data fetch.
-  - `confetti` — Success celebration animation.
-  - `page_transition` — Elegant screen switching.
-  - `intl` — Localized dates, numbers, and currency formatting.
+### 🏠 3. Immersive Movie Showcase
+- **Real-time Catalog**: Movie data synced from **Cloud Firestore** with support for Bollywood, Hollywood, and Tollywood.
+- **Trailer Playback**: Integrated YouTube player for high-quality movie trailers.
+- **Wishlist System**: Interactive heart animations to save movies for later.
+- **Shimmer Loaders**: Visual skeleton loading states during content fetch.
+
+### 🗓 4. Multiplex & Date Planner
+- **Calendar Slider**: 7-day horizontal date slider for quick showtime selection.
+- **Multiplex Selection**: Grouped showtimes by premium theaters (CineMax, PVR, INOX).
+
+### 🪑 5. Interactive Seat Layout
+- **3D perspective floor**: A custom floor painter (`TheaterFloorPainter`) providing depth of view.
+- **Multiclass seats**: Interactive matrix containing **Regular**, **Premium**, and **Recliner** sections.
+- **Live Pricing**: Dynamic price calculation based on seat tier and selection.
+
+### 💳 6. Digital Checkout & QR Tickets
+- **Secure Payments**: Simulated payment models for UPI (GPay, PhonePe, Paytm), Credit Cards, and Net Banking.
+- **Smart QR Tickets**: Real-time generation of scannable QR codes for ticket verification.
+- **Social Sharing**: Share booking details with friends via `share_plus`.
 
 ---
 
-## 🔐 2. ITW_Project — User Authentication System
+## 🛠 Technology Stack
 
-Developed as a structured academic project focusing on the core principles of web/app authentication pipelines and client-side verification.
-
-### Key Screens & Flow
-1. **Interactive Auth Pipeline (`AuthScreen`)**
-   - State-driven login and registration toggle with custom animations.
-   - Single Ticker Provider coordination for synchronizing slide and fade effects.
-2. **User Registration Form (`SignupForm`)**
-   - Advanced field validations (regex-based email, minimum character lengths, matching password confirmation).
-   - Localized date-of-birth picker and gender selection widgets.
-3. **Password Recovery Flow (`ForgotPassForm`)**
-   - Simulation of reset email routing with prompt UI feedback.
-4. **Local Authentication Store (`UserService`)**
-   - Thread-safe singleton user registry managing active authentication states.
-
-### Tech Stack
-- **Languages**: Dart
-- **Framework**: Flutter
-- **Key Packages**:
-  - `intl` — Format Date of Birth selection.
+- **Framework**: [Flutter](https://flutter.dev) (v3.x)
+- **Backend**: [Firebase](https://firebase.google.com) (Auth, Firestore)
+- **State Management**: [Provider](https://pub.dev/packages/provider)
+- **Animations**: `flutter_animate`, `lottie`, `confetti`
+- **Media**: `youtube_player_flutter`, `cached_network_image`, `image_picker`
+- **Utilities**: `intl`, `qr_flutter`, `share_plus`, `flutter_secure_storage`
+- **Typography**: [Poppins](https://fonts.google.com/specimen/Poppins)
 
 ---
 
-## 📂 Repository Structure
+## 📂 Project Structure
 
 ```text
-DevByRam/
-├── CinemaNow/                  # Feature-rich movie booking application
-│   ├── android/, ios/, web/    # Platform-specific builds
-│   ├── assets/                 # Fonts (Poppins), Icons, Images
-│   ├── lib/
-│   │   └── main.dart           # Unified app entry & components
-│   └── pubspec.yaml            # CinemaNow dependencies
+CinemaNow/
+├── android/, ios/, web/    # Platform-specific native directories
+├── assets/                 # App assets directory
+│   ├── fonts/              # Poppins typography files
+│   ├── images/             # UI image resources
+│   ├── icons/              # SVG and asset icon packs
+│   └── animations/         # Lottie JSON files
 │
-├── ITW_Project/                # Academic Auth Demo
-│   ├── android/, ios/, web/    # Platform-specific builds
-│   ├── lib/
-│   │   └── main.dart           # Authentication logic & forms
-│   └── pubspec.yaml            # ITW_Project dependencies
+├── lib/
+│   ├── main.dart           # Primary application logic (Services, Models, UI)
+│   ├── firebase_options.dart # Firebase configuration for all platforms
+│   └── ...
 │
-└── README.md                   # Portfolio documentation (this file)
+└── pubspec.yaml            # Project dependencies and asset definitions
 ```
 
 ---
 
-## 🛠 Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
+- **Flutter SDK**: [Install Flutter](https://docs.flutter.dev/get-started/install)
+- **Firebase Project**: Set up a Firebase project and add your `google-services.json` (Android) and `GoogleService-Info.plist` (iOS).
 
-Ensure you have the Flutter SDK installed on your system. Run `flutter doctor` to verify your setup:
+### Build and Run
 
-```bash
-flutter doctor
-```
-
-### Installation
-
-1. **Clone the Repository:**
+1. **Clone & Fetch:**
    ```bash
-   git clone https://github.com/yourusername/DevByRam.git
-   cd DevByRam
-   ```
-
-2. **Run CinemaNow:**
-   ```bash
+   git clone https://github.com/your-username/CinemaNow.git
    cd CinemaNow
    flutter pub get
-   flutter run
    ```
 
-3. **Run ITW_Project:**
+2. **Initialize Firebase:**
+   Ensure you have the [Firebase CLI](https://firebase.google.com/docs/cli) installed.
    ```bash
-   cd ../ITW_Project
-   flutter pub get
-   flutter run
+   flutterfire configure
    ```
 
----
-
-## 🧠 About the Developer
-
-I'm **Ram**, a passionate mobile developer focused on crafting responsive, scalable, and visually stunning cross-platform applications using **Flutter**. This collection represents my expertise in UI/UX architecture, state patterns, animation design, and clean code practices.
-
-📫 **Let's Connect:**
-- **Email:** [bt23cse026@iiitn.ac.in](mailto:bt23cse026@iiitn.ac.in)
+3. **Run on Target Device:**
+   ```bash
+   flutter run
+   ```

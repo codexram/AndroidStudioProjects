@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1061944288565",
+    "project_id": "cinemanow-77cbc",
+    "storage_bucket": "cinemanow-77cbc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061944288565:android:a3a410c7f2954dcaa2187c",
+        "android_client_info": {
+          "package_name": "com.example.cinemanow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061944288565-9e1iao7nu38evcd1lsm12qk0tqkt88c8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cinemanow",
+            "certificate_hash": "c13de15b4f2f0703d9f2f0e83075d23a72dca9ef"
+          }
+        },
+        {
+          "client_id": "1061944288565-tos8ui7dn7frhrq2c16j230gbv9bkc6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdS2PLvd_FbCCvkE60Wz1YjvRNAkDW_68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061944288565-tos8ui7dn7frhrq2c16j230gbv9bkc6e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1061944288565-fpd0pjalqbnf2dqs8nohnjqdoufc6ska.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cinemanow"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
