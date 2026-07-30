@@ -1,4 +1,4 @@
-# CinemaNow — Premium Movie Ticket Booking App
+## CinemaNow — Premium Movie Ticket Booking App
 
 CinemaNow is a feature-rich, high-fidelity Flutter application designed to provide users with a modern and seamless movie ticket booking experience. From dynamic movie showcases to an interactive 3D seat planner and real-time backend integration, this project demonstrates advanced Flutter development practices.
 
